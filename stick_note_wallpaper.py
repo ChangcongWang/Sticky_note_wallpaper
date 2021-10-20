@@ -26,10 +26,10 @@ i = 0
 for msg in msglist:
     w, h = draw.textsize(msg, myfont)
 
-    draw.text(((W-w)/3, (H-h)/4+(H-h)/2/l*i), msg, (255, 255, 255),
+    draw.text((W/5, (H-h)/4+(H-h)/2/l*i), msg, (255, 255, 255),
               font=myfont, align='center')  # 居中文本
 
-    i = i+1
+    i = i + 1
 
 img.save(photoname)
 
